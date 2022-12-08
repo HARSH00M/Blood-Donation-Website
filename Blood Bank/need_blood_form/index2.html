@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> Red Banks</title>
+    <link rel="stylesheet" href="/style/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <style>
+      html, body {
+      min-height: 100%;
+      }
+      body, div, form, input, select, p { 
+      padding: 0;
+      margin: 0;
+      outline: none;
+      font-family: Roboto, Arial, sans-serif;
+      font-size: 16px;
+      color: rgb(0, 0, 0);
+      }
+      body {
+      background-size: cover;
+      }
+      h1, h2 {
+      text-transform: uppercase;
+      font-weight: 400;
+      }
+      h2 {
+      margin: 0 0 0 8px;
+      }
+      .main-block {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      padding: 25px;
+      background: rgba(200, 255, 48, 0.5); 
+      }
+      .left-part, form {
+      padding: 25px;
+      }
+      .left-part {
+      text-align: center;
+      }
+      .fa-graduation-cap {
+      font-size: 72px;
+      }
+      form {
+      background: rgba(255, 255, 255, 0.7); 
+      border: 1px solid red;
+      border-radius:1rem;
+      box-shadow: 1px 1px 50px rgba(51, 47, 47,0.5);
+      }
+      .title {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+      color: rgb(0, 0, 0);
+      }
+      .info {
+      display: flex;
+      flex-direction: column;
+      }
+      input, select {
+      padding: 5px;
+      margin-bottom: 30px;
+      background: transparent;
+      border: none;
+      color: rgb(0, 0, 0);
+      border-bottom: 1px solid rgb(37, 37, 37);
+      }
+      input::placeholder {
+      color: rgb(0, 0, 0);
+      }
+      option:focus {
+      border: none;
+      }
+      option {
+      background: rgb(255, 255, 255); 
+      border: none;
+      }
+      .checkbox input {
+      margin: 0 10px 0 0;
+      vertical-align: middle;
+      }
+      .checkbox a {
+      color: #26a9e0;
+      }
+      .checkbox a:hover {
+      color: #81ccd3;
+      }
+      .btn-item, button {
+      padding: 10px 5px;
+      margin-top: 20px;
+      border-radius: 5px; 
+      border: none;
+      background: red;
+      text-decoration: none;
+      font-size: 15px;
+      font-weight: 400;
+      color: rgb(255, 255, 255);
+      }
+      .btn-item {
+      display: inline-block;
+      margin: 20px 5px 0;
+      }
+      button {
+      width: 100%;
+      }
+      button:hover, .btn-item:hover {
+      background: #ffffff;
+      color: red;
+      border: 1px solid red;
+      } 
+      html,body {
+      height: 100%;
+      }
+      .main-block {
+      flex-direction: row;;
+      }
+      .left-part, form {
+      flex: 1;
+      height: auto;
+      }
+  
+    </style>
+  </head>
+  <body>
+    <nav>
+      <img src="images/logo.jpg" alt="">
+
+      <div class="navigation">
+          <ul>
+              <li><a href="/index.html">Home</a></li>
+              <li><a href="">About</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Branches</a></li>
+              <li><a href="#">Contact us </a></li>
+          </ul>
+
+      </div>
+
+
+
+    </nav>
+    <div class="main-block">
+      <div class="left-part">
+        <i class="fas fa-graduation-cap"></i>
+        <h1>Register to Organization</h1>
+        <p>Be a part of a Rising Organization in the Field of Blood Donation.It is a non-profit Leading Organization of INDIA.<p>
+       
+      </div>
+      <form action="/">
+        <div class="title">
+          <i class="fas fa-pencil-alt"></i> 
+          <h2>Register here</h2>
+        </div>
+        <div class="info">
+          <input class="fname" type="text" name="name" placeholder="Full name">
+          <input type="text" name="name" placeholder="Email">
+          <input type="text" name="name" placeholder="Phone number">
+          <input type="password" name="name" placeholder="Password">
+          <select style="color: black;">
+            <option value="course-type" style="font-weight: bold;" selected>As a : </option>
+            <option value="short-courses">Blood Donar </option>
+            <option value="featured-courses">Blood Needy</option>
+            <option value="undergraduate">Platlets Donar</option>
+            <option value="diploma">Platlets Needy</option>
+            <option value="certificate">Volunteer</option>
+            <option value="masters-degree">Financial Donation</option>
+            <option value="postgraduate">Blood Drive</option>
+          </select>
+        </div>
+        <div class="checkbox">
+          <input type="checkbox" name="checkbox"><span>I agree to the <a href="https://www.w3docs.com/privacy-policy">Privacy Poalicy for W3Docs.</a></span>
+        </div>
+        <button type="submit" href="/">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
